@@ -1,4 +1,6 @@
 # phpstorm-templates
+Set up via `Settings` > `Editor` > `File and Code Templates`
+
 ## PHP Getter Method
 ```
 #if ( ($RETURN_TYPE && $TYPE_HINT == $RETURN_TYPE) )#else/** @return ${TYPE_HINT} */#end
