@@ -2,7 +2,7 @@
 Set up via `Settings` > `Editor` > `File and Code Templates`
 
 ## PHP Getter Method
-```
+```velocity
 #if ( ($RETURN_TYPE && $TYPE_HINT == $RETURN_TYPE) )#else/** @return ${TYPE_HINT} */#end
 public ${STATIC} function get${NAME}()#if(${RETURN_TYPE}): ${RETURN_TYPE}#else#end
 {
@@ -54,7 +54,7 @@ class Foo
 ```
 
 ## PHP Fluent Setter Method
-```
+```velocity
 #if ( ($SCALAR_TYPE_HINT == $TYPE_HINT) )#else/** @param ${TYPE_HINT} $${PARAM_NAME} */#end
 public function set${NAME}(#if (${SCALAR_TYPE_HINT})${SCALAR_TYPE_HINT} #else#end$${PARAM_NAME})#if(${RETURN_TYPE}): static#else#end
 {
@@ -110,7 +110,7 @@ class Foo
 ```
 
 ## PHP Setter Method
-```
+```velocity
 #if (${SCALAR_TYPE_HINT})#else/** @param ${TYPE_HINT} $${PARAM_NAME} */#end
 public ${STATIC} function set${NAME}(#if (${SCALAR_TYPE_HINT})${SCALAR_TYPE_HINT} #end$${PARAM_NAME})#if (${VOID_RETURN_TYPE}):void #end
 {
